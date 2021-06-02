@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C65FB48739D6A41DBC588FF4 /* Pods_ProgrammaticUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0587FEF9D6E8125446222F17 /* Pods_ProgrammaticUI.framework */; };
 		E33C0DAD266674F0005BA2F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E33C0DAC266674F0005BA2F7 /* AppDelegate.m */; };
 		E33C0DB0266674F0005BA2F7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E33C0DAF266674F0005BA2F7 /* SceneDelegate.m */; };
 		E33C0DB3266674F0005BA2F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33C0DB2266674F0005BA2F7 /* ViewController.m */; };
-		E33C0DB6266674F0005BA2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33C0DB4266674F0005BA2F7 /* Main.storyboard */; };
 		E33C0DB8266674F2005BA2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33C0DB7266674F2005BA2F7 /* Assets.xcassets */; };
-		E33C0DBB266674F2005BA2F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33C0DB9266674F2005BA2F7 /* LaunchScreen.storyboard */; };
 		E33C0DBE266674F2005BA2F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E33C0DBD266674F2005BA2F7 /* main.m */; };
+		E33C0DC62667D59F005BA2F7 /* BidmadBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E33C0DC52667D59F005BA2F7 /* BidmadBannerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0587FEF9D6E8125446222F17 /* Pods_ProgrammaticUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgrammaticUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		271EA2EB9C56BDF7A6B00CB5 /* Pods-ProgrammaticUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammaticUI.release.xcconfig"; path = "Target Support Files/Pods-ProgrammaticUI/Pods-ProgrammaticUI.release.xcconfig"; sourceTree = "<group>"; };
+		81C9BC033C778A10EBD817C0 /* Pods-ProgrammaticUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammaticUI.debug.xcconfig"; path = "Target Support Files/Pods-ProgrammaticUI/Pods-ProgrammaticUI.debug.xcconfig"; sourceTree = "<group>"; };
 		E33C0DA8266674F0005BA2F7 /* ProgrammaticUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammaticUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33C0DAB266674F0005BA2F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E33C0DAC266674F0005BA2F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,11 +27,11 @@
 		E33C0DAF266674F0005BA2F7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		E33C0DB1266674F0005BA2F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E33C0DB2266674F0005BA2F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E33C0DB5266674F0005BA2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E33C0DB7266674F2005BA2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E33C0DBA266674F2005BA2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E33C0DBC266674F2005BA2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E33C0DBD266674F2005BA2F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E33C0DC42667D59F005BA2F7 /* BidmadBannerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BidmadBannerManager.h; sourceTree = "<group>"; };
+		E33C0DC52667D59F005BA2F7 /* BidmadBannerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BidmadBannerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65FB48739D6A41DBC588FF4 /* Pods_ProgrammaticUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8636FDB6548F21EAB6CF78EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81C9BC033C778A10EBD817C0 /* Pods-ProgrammaticUI.debug.xcconfig */,
+				271EA2EB9C56BDF7A6B00CB5 /* Pods-ProgrammaticUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B887C6246CE7CC25AA27476E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0587FEF9D6E8125446222F17 /* Pods_ProgrammaticUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E33C0D9F266674F0005BA2F7 = {
 			isa = PBXGroup;
 			children = (
 				E33C0DAA266674F0005BA2F7 /* ProgrammaticUI */,
 				E33C0DA9266674F0005BA2F7 /* Products */,
+				8636FDB6548F21EAB6CF78EB /* Pods */,
+				B887C6246CE7CC25AA27476E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,9 +91,9 @@
 				E33C0DAF266674F0005BA2F7 /* SceneDelegate.m */,
 				E33C0DB1266674F0005BA2F7 /* ViewController.h */,
 				E33C0DB2266674F0005BA2F7 /* ViewController.m */,
-				E33C0DB4266674F0005BA2F7 /* Main.storyboard */,
+				E33C0DC42667D59F005BA2F7 /* BidmadBannerManager.h */,
+				E33C0DC52667D59F005BA2F7 /* BidmadBannerManager.m */,
 				E33C0DB7266674F2005BA2F7 /* Assets.xcassets */,
-				E33C0DB9266674F2005BA2F7 /* LaunchScreen.storyboard */,
 				E33C0DBC266674F2005BA2F7 /* Info.plist */,
 				E33C0DBD266674F2005BA2F7 /* main.m */,
 			);
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E33C0DC1266674F2005BA2F7 /* Build configuration list for PBXNativeTarget "ProgrammaticUI" */;
 			buildPhases = (
+				5D28FB54E212184BD1D9D908 /* [CP] Check Pods Manifest.lock */,
 				E33C0DA4266674F0005BA2F7 /* Sources */,
 				E33C0DA5266674F0005BA2F7 /* Frameworks */,
 				E33C0DA6266674F0005BA2F7 /* Resources */,
+				2B83AFCB31EFCC2D6E2CCF92 /* [CP] Embed Pods Frameworks */,
+				94618832D8C328A76A0383F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +159,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E33C0DBB266674F2005BA2F7 /* LaunchScreen.storyboard in Resources */,
 				E33C0DB8266674F2005BA2F7 /* Assets.xcassets in Resources */,
-				E33C0DB6266674F0005BA2F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B83AFCB31EFCC2D6E2CCF92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProgrammaticUI/Pods-ProgrammaticUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProgrammaticUI/Pods-ProgrammaticUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProgrammaticUI/Pods-ProgrammaticUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D28FB54E212184BD1D9D908 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProgrammaticUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94618832D8C328A76A0383F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProgrammaticUI/Pods-ProgrammaticUI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProgrammaticUI/Pods-ProgrammaticUI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProgrammaticUI/Pods-ProgrammaticUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E33C0DA4266674F0005BA2F7 /* Sources */ = {
@@ -148,30 +232,12 @@
 				E33C0DB3266674F0005BA2F7 /* ViewController.m in Sources */,
 				E33C0DAD266674F0005BA2F7 /* AppDelegate.m in Sources */,
 				E33C0DBE266674F2005BA2F7 /* main.m in Sources */,
+				E33C0DC62667D59F005BA2F7 /* BidmadBannerManager.m in Sources */,
 				E33C0DB0266674F0005BA2F7 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E33C0DB4266674F0005BA2F7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E33C0DB5266674F0005BA2F7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E33C0DB9266674F2005BA2F7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E33C0DBA266674F2005BA2F7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E33C0DBF266674F2005BA2F7 /* Debug */ = {
@@ -288,6 +354,7 @@
 		};
 		E33C0DC2266674F2005BA2F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C9BC033C778A10EBD817C0 /* Pods-ProgrammaticUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +373,7 @@
 		};
 		E33C0DC3266674F2005BA2F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271EA2EB9C56BDF7A6B00CB5 /* Pods-ProgrammaticUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
