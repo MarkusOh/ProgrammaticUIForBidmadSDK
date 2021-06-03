@@ -62,11 +62,15 @@
 }
 
 -(void)BIDMADBannerLoad:(BIDMADBanner *)core{
-    [self.callbackLabel setText:[NSString stringWithFormat:@"%s", __FUNCTION__]];
+    if(self.callbackLabel != nil){
+        [self.callbackLabel setText:[NSString stringWithFormat:@"%s", __FUNCTION__]];
+    }
 }
 
 -(void)BIDMADOpenBiddingBannerLoad:(OpenBiddingBanner *)core{
-    [self.callbackLabel setText:[NSString stringWithFormat:@"%s", __FUNCTION__]];
+    if(self.callbackLabel != nil){
+        [self.callbackLabel setText:[NSString stringWithFormat:@"%s", __FUNCTION__]];
+    }
 }
 
 @end

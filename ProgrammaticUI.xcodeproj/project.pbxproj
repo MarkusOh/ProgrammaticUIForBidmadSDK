@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26BA38E42668DAE300CF171E /* AdWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BA38E32668DAE300CF171E /* AdWallViewController.m */; };
 		C65FB48739D6A41DBC588FF4 /* Pods_ProgrammaticUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0587FEF9D6E8125446222F17 /* Pods_ProgrammaticUI.framework */; };
 		E33C0DAD266674F0005BA2F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E33C0DAC266674F0005BA2F7 /* AppDelegate.m */; };
 		E33C0DB0266674F0005BA2F7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E33C0DAF266674F0005BA2F7 /* SceneDelegate.m */; };
@@ -18,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		0587FEF9D6E8125446222F17 /* Pods_ProgrammaticUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgrammaticUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26BA38E22668DAE300CF171E /* AdWallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWallViewController.h; sourceTree = "<group>"; };
+		26BA38E32668DAE300CF171E /* AdWallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWallViewController.m; sourceTree = "<group>"; };
 		271EA2EB9C56BDF7A6B00CB5 /* Pods-ProgrammaticUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammaticUI.release.xcconfig"; path = "Target Support Files/Pods-ProgrammaticUI/Pods-ProgrammaticUI.release.xcconfig"; sourceTree = "<group>"; };
 		81C9BC033C778A10EBD817C0 /* Pods-ProgrammaticUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammaticUI.debug.xcconfig"; path = "Target Support Files/Pods-ProgrammaticUI/Pods-ProgrammaticUI.debug.xcconfig"; sourceTree = "<group>"; };
 		E33C0DA8266674F0005BA2F7 /* ProgrammaticUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammaticUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +93,8 @@
 				E33C0DAF266674F0005BA2F7 /* SceneDelegate.m */,
 				E33C0DB1266674F0005BA2F7 /* ViewController.h */,
 				E33C0DB2266674F0005BA2F7 /* ViewController.m */,
+				26BA38E22668DAE300CF171E /* AdWallViewController.h */,
+				26BA38E32668DAE300CF171E /* AdWallViewController.m */,
 				E33C0DC42667D59F005BA2F7 /* BidmadBannerManager.h */,
 				E33C0DC52667D59F005BA2F7 /* BidmadBannerManager.m */,
 				E33C0DB7266674F2005BA2F7 /* Assets.xcassets */,
@@ -231,6 +236,7 @@
 				E33C0DB3266674F0005BA2F7 /* ViewController.m in Sources */,
 				E33C0DAD266674F0005BA2F7 /* AppDelegate.m in Sources */,
 				E33C0DBE266674F2005BA2F7 /* main.m in Sources */,
+				26BA38E42668DAE300CF171E /* AdWallViewController.m in Sources */,
 				E33C0DC62667D59F005BA2F7 /* BidmadBannerManager.m in Sources */,
 				E33C0DB0266674F0005BA2F7 /* SceneDelegate.m in Sources */,
 			);

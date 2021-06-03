@@ -37,10 +37,12 @@
     [super viewDidLoad];
     
     defaultCallbackString = @"NO CALLBACK";
+    defaultZoneId = @"5cab1c9b-1831-4434-9365-5f36ea488f67";
+    
     [self uiSetting];
     
-    defaultZoneId = @"5cab1c9b-1831-4434-9365-5f36ea488f67";
     bidmadBannerManager = [[BidmadBannerManager alloc] initForBannerOption:BannerOptionBidmad parentVC:self uiView:adView zoneId:defaultZoneId refreshInterval:@60];
+    [bidmadBannerManager setCallbackLabel: callbackLabel];
 }
 
 -(void)bannerTestLoadClicked{
@@ -49,6 +51,7 @@
 
 -(void)cleanBannerClicked{
     [bidmadBannerManager bannerRemove];
+    bidmadBannerManager = [[BidmadBannerManager alloc] initForBannerOption:BannerOptionBidmad parentVC:self uiView:adView zoneId:defaultZoneId refreshInterval:@60];
 }
 
 -(void)presentVCClicked{
@@ -60,7 +63,7 @@
 }
 
 -(void)uiSetting{
-    [self.view setBackgroundColor: UIColor.whiteColor];
+    [self.view setBackgroundColor: UIColor.systemBackgroundColor];
     
     zoneIdTextField = [[UITextField alloc] init];
     callbackLabel = [[UILabel alloc] init];
