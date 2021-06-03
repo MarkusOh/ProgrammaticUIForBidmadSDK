@@ -86,12 +86,19 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - OpenBiddingHelper (1.2.6):
+    - Google-Mobile-Ads-SDK (= 8.3.0)
+    - GoogleMobileAdsMediationAdColony (= 4.6.0.0)
+    - GoogleMobileAdsMediationAppLovin (= 10.0.1.0)
+    - GoogleMobileAdsMediationFacebook (= 6.3.1.0)
+    - GoogleMobileAdsMediationUnity (= 3.6.2.0)
   - PromisesObjC (1.2.12)
   - TapjoySDK (12.8.0)
   - UnityAds (3.6.2)
 
 DEPENDENCIES:
   - BidmadSDK (= 2.7.5)
+  - OpenBiddingHelper (= 1.2.6)
 
 SPEC REPOS:
   trunk:
@@ -111,6 +118,7 @@ SPEC REPOS:
     - GoogleUserMessagingPlatform
     - GoogleUtilities
     - nanopb
+    - OpenBiddingHelper
     - PromisesObjC
     - TapjoySDK
     - UnityAds
@@ -132,10 +140,11 @@ SPEC CHECKSUMS:
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: f8a43108b38a68eebe8b3540e1f4f2d28843ce20
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  OpenBiddingHelper: 14067f361d26717cbcaa315cc77d6da0eb7568a4
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
   UnityAds: 97a63bddf0e57257956399538019454879847c1a
 
-PODFILE CHECKSUM: 5f0dff853b061d3f2805bb4b96f5861f24b1526a
+PODFILE CHECKSUM: 18e14a10f77585dc8cbe0ae4b90b89d732abf669
 
 COCOAPODS: 1.10.1

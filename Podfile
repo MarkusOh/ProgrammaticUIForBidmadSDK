@@ -7,5 +7,6 @@ target 'ProgrammaticUI' do
 
   # Pods for ProgrammaticUI
   pod 'BidmadSDK', '2.7.5'
+  pod 'OpenBiddingHelper', '1.2.6'
 
 end

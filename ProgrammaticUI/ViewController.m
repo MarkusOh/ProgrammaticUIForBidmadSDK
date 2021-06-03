@@ -6,9 +6,11 @@
 //
 
 #import "ViewController.h"
+#import "BidmadBannerManager.h"
 
 @interface ViewController () {
     NSString *defaultCallbackString;
+    NSString *defaultZoneId;
     
     UITextField *zoneIdTextField;
     UILabel *callbackLabel;
@@ -17,17 +19,47 @@
     UIButton *cleanBannerButton;
     UIButton *presentVCButton;
     UIView *innerContainerView;
+    UIView *innerInnerContainer1;
+    UIView *adViewContainer;
+    UIView *adView;
+    UIView *buttonContainer1;
+    UIView *buttonContainer2;
+    UIView *buttonContainer3;
+    
+    BidmadBannerManager *bidmadBannerManager;
 }
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad{
     [super viewDidLoad];
     
     defaultCallbackString = @"NO CALLBACK";
+    [self uiSetting];
     
+    defaultZoneId = @"5cab1c9b-1831-4434-9365-5f36ea488f67";
+    bidmadBannerManager = [[BidmadBannerManager alloc] initForBannerOption:BannerOptionBidmad parentVC:self uiView:adView zoneId:defaultZoneId refreshInterval:@60];
+}
+
+-(void)bannerTestLoadClicked{
+    [bidmadBannerManager bannerLoad];
+}
+
+-(void)cleanBannerClicked{
+    [bidmadBannerManager bannerRemove];
+}
+
+-(void)presentVCClicked{
+    
+}
+
+-(void)textFieldDidChange:(UITextField *)textField{
+    defaultZoneId = textField.text;
+}
+
+-(void)uiSetting{
     [self.view setBackgroundColor: UIColor.whiteColor];
     
     zoneIdTextField = [[UITextField alloc] init];
@@ -37,12 +69,16 @@
     cleanBannerButton = [[UIButton alloc] init];
     innerContainerView = [[UIView alloc] init];
     presentVCButton = [[UIButton alloc] init];
+    innerInnerContainer1 = [[UIView alloc] init];
+    adViewContainer = [[UIView alloc] init];
+    adView = [[UIView alloc] init];
     
     // A Boolean value that determines whether the view’s autoresizing mask is translated into Auto Layout constraints.
     [zoneIdTextField setTranslatesAutoresizingMaskIntoConstraints:NO];
     [zoneIdTextField setTextAlignment:NSTextAlignmentCenter];
     [zoneIdTextField setPlaceholder:@"Enter Your Zone ID"];
     [zoneIdTextField setFont: [UIFont systemFontOfSize:24]];
+    [zoneIdTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     
     callbackLabel = [[UILabel alloc] init];
     [callbackLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
@@ -59,6 +95,7 @@
     [bannerTestStartButton.layer setShadowOpacity:0.6];
     [bannerTestStartButton.layer setMasksToBounds:NO];
     [bannerTestStartButton.layer setShadowRadius:5];
+    [bannerTestStartButton addTarget:self action:@selector(bannerTestLoadClicked) forControlEvents:UIControlEventTouchUpInside];
     
     [cleanBannerButton setTranslatesAutoresizingMaskIntoConstraints:NO];
     [cleanBannerButton setBackgroundColor: UIColor.systemTealColor];
@@ -69,6 +106,7 @@
     [cleanBannerButton.layer setShadowOpacity:0.6];
     [cleanBannerButton.layer setMasksToBounds:NO];
     [cleanBannerButton.layer setShadowRadius:5];
+    [cleanBannerButton addTarget:self action:@selector(cleanBannerClicked) forControlEvents:UIControlEventTouchUpInside];
     
     [presentVCButton setTranslatesAutoresizingMaskIntoConstraints:NO];
     [presentVCButton setBackgroundColor: UIColor.systemYellowColor];
@@ -79,19 +117,18 @@
     [presentVCButton.layer setShadowOpacity:0.6];
     [presentVCButton.layer setMasksToBounds:NO];
     [presentVCButton.layer setShadowRadius:5];
+    [presentVCButton addTarget:self action:@selector(presentVCClicked) forControlEvents:UIControlEventTouchUpInside];
     
     [innerContainerView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    
-    UIView *innerInnerContainer1 = [[UIView alloc] init];
     [innerInnerContainer1 setTranslatesAutoresizingMaskIntoConstraints:NO];
-    UIView *adViewContainer = [[UIView alloc] init];
     [adViewContainer setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [adView setTranslatesAutoresizingMaskIntoConstraints:NO];
     
-    UIView *buttonContainer1 = [[UIView alloc] init];
+    buttonContainer1 = [[UIView alloc] init];
     [buttonContainer1 setTranslatesAutoresizingMaskIntoConstraints:NO];
-    UIView *buttonContainer2 = [[UIView alloc] init];
+    buttonContainer2 = [[UIView alloc] init];
     [buttonContainer2 setTranslatesAutoresizingMaskIntoConstraints:NO];
-    UIView *buttonContainer3 = [[UIView alloc] init];
+    buttonContainer3 = [[UIView alloc] init];
     [buttonContainer3 setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     /**---------------------------UIView Closer to RootVC-----------------------------*/
@@ -106,6 +143,7 @@
     [innerInnerContainer1 addSubview: buttonContainer1];
     [innerInnerContainer1 addSubview: buttonContainer2];
     [innerInnerContainer1 addSubview: buttonContainer3];
+    [adViewContainer addSubview:adView];
     
     [buttonContainer1 addSubview: bannerTestStartButton];
     [buttonContainer2 addSubview: cleanBannerButton];
@@ -147,8 +185,10 @@
          [presentVCButton.widthAnchor constraintEqualToAnchor:buttonContainer3.widthAnchor multiplier:0.5],
          [presentVCButton.centerXAnchor constraintEqualToAnchor:buttonContainer3.centerXAnchor],
          [presentVCButton.centerYAnchor constraintEqualToAnchor:buttonContainer3.centerYAnchor],
+         [adView.centerYAnchor constraintEqualToAnchor:adViewContainer.centerYAnchor],
+         [adView.centerXAnchor constraintEqualToAnchor:adViewContainer.centerXAnchor],
+         [adView.widthAnchor constraintEqualToAnchor:adViewContainer.widthAnchor],
      ]];
 }
-
 
 @end
